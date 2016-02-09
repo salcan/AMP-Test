@@ -21,35 +21,69 @@
 	
 	<style amp-custom>
 	  /*custom inline styles*/
+	  @font-face{
+		  font-family:'Fira Sans';
+		  src:url("https://fonts.googleapis.com/css?family=Fira+Sans");
+	  }
 	  body {
 	    background-color: white;
 	  }
 	  amp-img {
-	    background-color: gray;
-	    border: 5px solid #6d8c97;
+	    background-color: #80a4b0;
+		display: block;
+	    /*border: 5px solid #80a4b0;*/
 	  }
+	  amp-img.text {
+		display: block;
+	    border-bottom: .5rem solid #fb2e39;
+		margin-left: auto;
+		margin-right: auto;
+		box-shadow: 1px 1px 1px #888888;
+	} 
 	  footer {
-		  padding:20px 10px;
-		  font-size:0.75em;
-		  text-align:center;
-		  background:#eee;
+		  padding: 1px 0 10px 0;
+		  font-size:0.9em;
+		  text-align: center;
+		  font-family: "Fira Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+		  background-color: #80a4b0;
+		  height: 75px;
 	  }
 	  header {
-		  position: absolute;
+		  display: block;
 		  background-color: #80a4b0;
 		  width:100%;
+	  }
+	  h1 {
+		  font-family: "Fira Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+		  padding: 10px;
+	  }
+	  p {
+	     font-family: "Fira Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+		 padding: 5px;
+	  }
+	  li {
+		  line-height: 24px;
+		  text-indent: 5px;
+		  list-style-position: inside;
+	  }
+	  a {
+		  color: #fb2e39;
+		  text-decoration: none;
+	  }
+	  a:hover {
+	  	border-bottom: 3px solid #eee;
 	  }
 	</style>
 	
   </head>
   <body>
 	  <header>
-	  <amp-img src="http://www.geek.com/wp-content/themes/geek7/images/geek_logo.svg" class="-amp-fill-content -amp-replaced-content" alt="Welcome" width="800" height="400"></amp-img>
+	  <amp-img src="http://www.geek.com/wp-content/themes/geek7/images/geek_logo.svg" class="-amp-fill-content -amp-replaced-content" alt="Welcome" width="500" height="250"></amp-img>
   </header>
 	  
     <h1>The 10 most streamed video games</h1>
 	
-	<amp-img src="http://www.geek.com/wp-content/uploads/2016/02/League-of-Legends-2-625x350.jpg" alt="Streamed games" width="618" height="346"></amp-img>
+	<amp-img class="text" src="http://www.geek.com/wp-content/uploads/2016/02/League-of-Legends-2-625x350.jpg" alt="Streamed games" width="618" height="346"></amp-img>
 	
 	<p>Say what you will about the act of watching others play video games instead of actually playing them yourself, but video game streams have become huge over the past few years and only seem to get bigger each day. Twitch has been at the forefront of this phenomenon, with other services like UStream and even YouTube getting in on the action as well.</p>
 	<p>Since game streaming is here to stay, we&#8217;ve decided that it would be a great idea to track the top streamed games on Twitch and other services each week. We&#8217;re able to do this thanks to tools provided by <a href="https://gamoloco.com/scoreboard/channels/weekly/5/2016" target="_blank">Gamoloco</a>, a stream-monitoring service. These charts are based on the nearly million people and more than 26,000 channels on streaming services worldwide.</p>
@@ -85,9 +119,8 @@
 	<p>Make sure to come back here next week to see the latest top 10 gaming streams.</p>
 	
 	<footer>
-		<p>Geek.com</p>
-		<p>
-			<amp-img src="http://www.geek.com//wp-content/themes/geek7/images/ziff_davis.svg" width="77" height="30"></amp-img> © 1996-2015 Ziff Davis, LLC. PCMag Digital Group Privacy Policy Terms of Use</p>
+		<p><big>Geek.com</big></p>
+			<amp-img src="http://www.geek.com//wp-content/themes/geek7/images/ziff_davis.svg" width="40" height="16"></amp-img> © 1996-2015 Ziff Davis, LLC. | <a href="http://www.ziffdavis.com/privacy-policy/">Privacy Policy</a> | <a href="http://www.ziffdavis.com/terms-of-use/">Terms of Use</a> 
 	</footer>
   </body>
 </html>
