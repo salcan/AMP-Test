@@ -30,7 +30,6 @@
 	  }
 	  amp-img {
 	    background-color: #80a4b0;
-		display: block;
 	    /*border: 5px solid #80a4b0;*/
 	  }
 	  amp-img.text {
@@ -39,14 +38,16 @@
 		margin-left: auto;
 		margin-right: auto;
 		box-shadow: 1px 1px 1px #888888;
-	} 
+		position:relative;
+		background-color: #80a4b0;
+	}  
 	  footer {
 		  padding: 1px 0 10px 0;
-		  font-size:0.9em;
+		  font-size:0.7em;
 		  text-align: center;
 		  font-family: "Fira Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
 		  background-color: #80a4b0;
-		  height: 75px;
+		  overflow: hidden;
 	  }
 	  header {
 		  display: block;
@@ -83,13 +84,13 @@
   </head>
   <body>
 	  <header>
-	  <amp-img src="http://www.geek.com/wp-content/themes/geek7/images/geek_logo.svg" class="-amp-fill-content -amp-replaced-content" alt="Welcome" width="500" height="250"></amp-img>
+	  <amp-img src="http://www.geek.com/wp-content/themes/geek7/images/geek_logo.svg" class="-amp-fill-content -amp-replaced-content" alt="Welcome" width="200" height="100"></amp-img>
   </header>
 	  
     <h1>The 10 most streamed video games</h1>
 	<p class="author">By: Tony Polanco <a href="http://www.geek.com/games/the-10-most-streamed-video-games-1646668/">Feb. 8, 2016 3:37 pm</a></p>
 	
-	<amp-img class="text" src="http://www.geek.com/wp-content/uploads/2016/02/League-of-Legends-2-625x350.jpg" alt="Streamed games" width="618" height="346"></amp-img>
+	<amp-img class="text" src="http://www.geek.com/wp-content/uploads/2016/02/League-of-Legends-2.jpg" alt="Streamed games" width="618" style="max-width:100%"></amp-img>
 	
 	<p>Say what you will about the act of watching others play video games instead of actually playing them yourself, but video game streams have become huge over the past few years and only seem to get bigger each day. Twitch has been at the forefront of this phenomenon, with other services like UStream and even YouTube getting in on the action as well.</p>
 	<p>Since game streaming is here to stay, we&#8217;ve decided that it would be a great idea to track the top streamed games on Twitch and other services each week. We&#8217;re able to do this thanks to tools provided by <a href="https://gamoloco.com/scoreboard/channels/weekly/5/2016" target="_blank">Gamoloco</a>, a stream-monitoring service. These charts are based on the nearly million people and more than 26,000 channels on streaming services worldwide.</p>
@@ -126,7 +127,7 @@
 	
 	<footer>
 		<p><big>Geek.com</big></p>
-			<amp-img src="http://www.geek.com//wp-content/themes/geek7/images/ziff_davis.svg" width="40" height="16"></amp-img> © 1996-2015 Ziff Davis, LLC. | <a href="http://www.ziffdavis.com/privacy-policy/">Privacy Policy</a> | <a href="http://www.ziffdavis.com/terms-of-use/">Terms of Use</a> 
+			<a href="http://www.ziffdavis.com"><amp-img src="http://www.geek.com//wp-content/themes/geek7/images/ziff_davis.svg" width="35" height="14"></amp-img></a> © 1996-2015 Ziff Davis, LLC. | <a href="http://www.ziffdavis.com/privacy-policy/">Privacy Policy</a> | <a href="http://www.ziffdavis.com/terms-of-use/">Terms of Use</a> 
 	</footer>
   </body>
 </html>
